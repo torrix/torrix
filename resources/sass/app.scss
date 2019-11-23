@@ -1,0 +1,15 @@
+$blue: #2c3e50;
+$green: #18bc9c;
+
+$global-primary-background: $blue;
+$global-secondary-background: $green;
+$global-link-color: $green;
+$global-link-hover-color: $blue;
+$description-list-term-font-size: 24px;
+
+$global-font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-size: 18px;
+
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+@import "~uikit/src/scss/uikit-theme.scss";
