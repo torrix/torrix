@@ -9,7 +9,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: Install npm dependencies
+        run: npm install
+      - name: Build frontend assets
+        run: npx mix
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.1.4
         env:
